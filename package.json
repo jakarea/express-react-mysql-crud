@@ -20,7 +20,8 @@
     "mysql",
     "sequalize",
     "mvc",
-    "crud"
+    "crud",
+    "pagination"
   ],
   "author": "Jakarea Parvez",
   "license": "ISC",

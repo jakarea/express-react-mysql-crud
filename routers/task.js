@@ -1,7 +1,6 @@
 const router = require('express').Router()
-const {add, edit, update, destroy, show} = require('../controllers/TaskController')
+const {all, add, edit, update, destroy, show} = require('../controllers/TaskController')
 
-// Registration Route
-router.post('/add', add)
-
+router.post('/', add)
+router.get('/', all)
 module.exports = router
