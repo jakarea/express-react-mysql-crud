@@ -5,7 +5,7 @@ This a task management demo project to crud using react, express and mysql.
 `GET` [http://localhost:4000/api/tasks](http://localhost:4000/api/tasks)
 
 **Respose**
-```
+```javascript
 {
     "type": "ok",
     "status": 200,
@@ -37,11 +37,11 @@ This a task management demo project to crud using react, express and mysql.
    ]
 }
 ```
-** Get single task **
+**Get single task**
 `GET` [http://localhost:4000/api/tasks/:id](http://localhost:4000/api/tasks/:id)
 
 **Response**
-```
+```javascript
 {
     "type": "ok",
     "status": 200,
@@ -63,7 +63,7 @@ This a task management demo project to crud using react, express and mysql.
 `PUT` [http://localhost:4000/api/tasks/:id](http://localhost:4000/api/tasks/:id)
 
 **Response**
-```
+```javascript
 {
     "type": "ok",
     "status": 201,
@@ -81,11 +81,11 @@ This a task management demo project to crud using react, express and mysql.
     }
 }
 ```
-** Delete task **
+**Delete task**
 `DELETE` [http://localhost:4000/api/tasks/:id](http://localhost:4000/api/tasks/:id)
 
 **Response**
-```
+```javascript
 {
     "type": "ok",
     "status": 200,
