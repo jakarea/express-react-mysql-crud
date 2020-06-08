@@ -20,7 +20,7 @@ export const TaskList = () => {
                                         <span class="h3">{task.title}</span>&nbsp;
                                         <button onClick={() => removeTask(task.id)} type="button" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></button>&nbsp;
                                         <Link to={`/${task.id}/edit`}>
-                                            <button onClick={() => editTask(task.id)} type="button" class="btn btn-warning"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>&nbsp;
+                                            <button type="button" class="btn btn-warning"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>&nbsp;
                                         </Link>
                                         <Link to={`/${task.id}`}>
                                             <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>

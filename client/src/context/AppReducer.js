@@ -1,4 +1,5 @@
 export default (state, action) => {
+    console.log(state.tasks, action.payload)
     switch (action.type) {
         case 'ALL_TASK':
             return {

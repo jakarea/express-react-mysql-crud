@@ -12,17 +12,17 @@ const EditTask = (route) => {
         handleSubmit,
     } = useForm(submitTask, validate);
     let history = useHistory();
-    const { tasks, editTask } = useContext(GlobalContext);
+    const { editTask } = useContext(GlobalContext);
     const { title, description } = values
     const currentTaskId = route.match.params.id;
 
-    function submitTask() {
+    async function submitTask() {
         const newTask = {
             id: currentTaskId,
             title,
             description
         }
-        editTask(newTask);
+        await editTask(newTask);
         history.push("/");
     }
     

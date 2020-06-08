@@ -55,12 +55,13 @@ export const GlobalProvider = ({ children }) => {
         })
     };
 
-    async function allTask(tasks) {
+    async function allTask() {
         const response = await fetch('http://localhost:4000/api/tasks')
-        tasks = await response.json()
+        const tas = await response.json()
+        console.log({tas})
         dispatch({
             type: 'ALL_TASK',
-            payload: tasks.task
+            payload: tas.task
         });
     };
 
