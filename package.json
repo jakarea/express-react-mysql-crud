@@ -37,7 +37,7 @@
     "mysql2": "^1.6.5",
     "sequelize": "^5.21.11",
     "sequelize-cli": "^5.5.1",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   },
   "engines": {
     "node": "11.3.0"
